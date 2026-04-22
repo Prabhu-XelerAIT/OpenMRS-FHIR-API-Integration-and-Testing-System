@@ -1,45 +1,59 @@
 Sl No,Module,Method,Full URL,Status,Remarks
-1,Patient,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Patient,Working,List fetched
-2,Patient,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Patient/ec205633-4334-4c8f-a7e7-47d8b62299c4,Working,Single record
-3,Patient,POST,https://34.93.1.225/openmrs/ws/fhir2/R4/Patient,Working,Created
-4,Patient,PUT,https://34.93.1.225/openmrs/ws/fhir2/R4/Patient/cfefb1e9-101a-4ec4-82c1-437bed9de913,Working,Updated
-5,Patient,DELETE,https://34.93.1.225/openmrs/ws/fhir2/R4/Patient/91eda8d6-ea15-43a9-9e26-809e744a38c0,Working,Deleted
-6,Person,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Person,Working,List fetched
-7,Person,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Person/5f87c042-6814-11e8-923f-e9a88dcb533f,Working,Single record
-8,Person,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Person?name=Super,Working,Filter
-9,Person,POST,https://34.93.1.225/openmrs/ws/fhir2/R4/Person,Working,Created
-10,Person,PUT,https://34.93.1.225/openmrs/ws/fhir2/R4/Person/af4ada12-5e07-11ef-8f7c-0242ac120002,Working,Updated
-11,Person,DELETE,https://34.93.1.225/openmrs/ws/fhir2/R4/Person/d403d381-5e07-11ef-8f7c-0242ac120002,Working,Deleted
-12,Practitioner,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Practitioner,Working,List fetched
-13,Practitioner,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Practitioner/d7a67c17-5e07-11ef-8f7c-0242ac120002,Working,Single record
-14,Practitioner,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Practitioner?name=Super,Working,Filter
-15,Location,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Location/72636eba-29bf-4d6c-97c4-4b04d87a95b5,Working,Single record
-16,Location,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Location?name=Bahmni,Working,Filter
-17,Location,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Location?address-city=Bangalore,Working,Filter
-18,Location,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Location?address-country=India,Working,Filter
-19,Location,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Location?address-postalcode=560001,Working,Fixed filter
-20,Location,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Location?address-state=Karnataka,Working,Fixed filter
-21,Location,POST,https://34.93.1.225/openmrs/ws/fhir2/R4/Location,Working,Created
-22,Location,PUT,https://34.93.1.225/openmrs/ws/fhir2/R4/Location/1973e910-160e-42ef-9daf-3f020f62c4cf,Working,Updated
-23,Observation,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Observation/670e9bd0-4ca2-4dd9-ab76-87fc01313334,Working,Single record
-24,Observation,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Observation?encounter=53046080-523c-4321-bc24-0481be041386,Working,Data present
-25,Observation,POST,https://34.93.1.225/openmrs/ws/fhir2/R4/Observation,Pending,422 error fix needed
-26,Observation,DELETE,https://34.93.1.225/openmrs/ws/fhir2/R4/Observation/877e317f-c456-4a48-8d88-bea7adc6b4e6,Pending,Not tested
-27,Encounter,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Encounter/c21f636f-f806-402e-877b-32a10ed4542b,Working,Single record
-28,Encounter,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Encounter?patient.identifier=TEST999,Working,Filter
-29,Condition,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Condition,Working,Working
-30,DiagnosticReport,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/DiagnosticReport,Partial,No data
-31,DiagnosticReport,POST,https://34.93.1.225/openmrs/ws/fhir2/R4/DiagnosticReport,Failed,422 error
-32,DiagnosticReport,PUT,https://34.93.1.225/openmrs/ws/fhir2/R4/DiagnosticReport,Failed,Not supported
-33,MedicationRequest,GET,https://34.93.1.225/openmrs/ws/fhir/R4/MedicationRequest,Failed,400 error
-34,MedicationRequest,POST,https://34.93.1.225/openmrs/ws/fhir/R4/MedicationRequest,Failed,Not supported
-35,FamilyHistory,GET,https://34.93.1.225/openmrs/ws/fhir/FamilyHistory/7482abd0-5e24-4344-a9a2-8a9dd5b7900e,Failed,404
-36,ServiceRequest,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/ServiceRequest,Partial,Empty
-37,ServiceRequest,POST,https://34.93.1.225/openmrs/ws/fhir2/R4/ServiceRequest,Failed,Not supported
-38,Task,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Task,Partial,Empty
-39,Task,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Task,Partial,Duplicate
-40,Task,POST,https://34.93.1.225/openmrs/ws/fhir2/R4/Task,Failed,Not supported
-41,Task,PUT,https://34.93.1.225/openmrs/ws/fhir2/R4/Task,Failed,Not supported
-42,Composition,GET,https://34.93.1.225/openmrs/ws/fhir/Composition?encounter_id=c21f636f-f806-402e-877b-32a10ed4542b&_format=json,Failed,404
-43,Metadata,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/metadata,Failed,Not exposed
-44,System,GET,https://34.93.1.225/openmrs/ws/fhir2,Failed,Not found
+1,AllergyIntolerance,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/AllergyIntolerance/ca89f72d-0ac4-43b5-af8e-f006e20f8f01,Working,Fetch by UUID
+2,AllergyIntolerance,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/AllergyIntolerance?_id=ca89f72d-0ac4-43b5-af8e-f006e20f8f01,Working,Search by ID
+3,AllergyIntolerance,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/AllergyIntolerance?patient.identifier=TEST999,Working,Filter working
+4,AllergyIntolerance,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/AllergyIntolerance?patient.name=Test,Working,Filter working
+
+5,Composition,GET,https://34.93.1.225/openmrs/ws/fhir/Composition?encounter_id=53046080-523c-4321-bc24-0481be041386&_format=json,Failed,404 Not Found
+
+6,Condition,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Condition/0bc8128e-31ec-4a2b-9023-20c36a3e6347,Working,Fetch record
+
+7,DiagnosticReport,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/DiagnosticReport,Partial,No data
+8,DiagnosticReport,POST,https://34.93.1.225/openmrs/ws/fhir2/R4/DiagnosticReport,Failed,422 Referential integrity issue
+9,DiagnosticReport,PUT,https://34.93.1.225/openmrs/ws/fhir2/R4/DiagnosticReport/{uuid},Failed,Not supported
+
+10,Encounter,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Encounter/53046080-523c-4321-bc24-0481be041386,Working,Fetch record
+11,Encounter,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Encounter?patient.identifier=TEST999,Working,Filter working
+
+12,FamilyHistory,GET,https://34.93.1.225/openmrs/ws/fhir/FamilyHistory/7482abd0-5e24-4344-a9a2-8a9dd5b7900e,Failed,404 Not Found
+13,FamilyHistory,GET,https://34.93.1.225/openmrs/ws/fhir/FamilyHistory?_id=7482abd0-5e24-4344-a9a2-8a9dd5b7900e,Failed,Not supported
+14,FamilyHistory,GET,https://34.93.1.225/openmrs/ws/fhir/FamilyHistory?subject=7482abd0-5e24-4344-a9a2-8a9dd5b7900e,Failed,Not supported
+
+15,Location,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Location/72636eba-29bf-4d6c-97c4-4b04d87a95b5,Working,Fetch record
+16,Location,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Location?name=Bahmni,Working,Filter working
+17,Location,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Location?address-city=Bangalore,Working,Filter working
+18,Location,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Location?address-country=India,Working,Filter working
+19,Location,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Location?address-postalcode=560001,Working,Filter working
+20,Location,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Location?address-state=Karnataka,Working,Filter working
+
+21,Observation,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Observation/670e9bd0-4ca2-4dd9-ab76-87fc01313334,Working,Fetch record
+22,Observation,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Observation?encounter=53046080-523c-4321-bc24-0481be041386,Working,Filter working
+23,Observation,POST,https://34.93.1.225/openmrs/ws/fhir2/R4/Observation,Working,Created successfully
+24,Observation,DELETE,https://34.93.1.225/openmrs/ws/fhir2/R4/Observation/9a187b26-80f8-40b6-b23f-450705eb6966,Working,Deleted verified
+
+25,MedicationRequest,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/MedicationRequest,Partial,No data
+26,MedicationRequest,GET,https://34.93.1.225/openmrs/ws/fhir/R4/MedicationRequest?_id={id},Failed,FHIR1 not supported
+27,MedicationRequest,POST,https://34.93.1.225/openmrs/ws/fhir/R4/MedicationRequest,Failed,Not supported
+28,MedicationRequest,PUT,https://34.93.1.225/openmrs/ws/fhir/R4/MedicationRequest/{id},Failed,Not supported
+29,MedicationRequest,DELETE,https://34.93.1.225/openmrs/ws/fhir/R4/MedicationRequest/{id},Failed,Not supported
+
+30,Practitioner,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Practitioner/d7a67c17-5e07-11ef-8f7c-0242ac120002,Working,Fetch record
+31,Practitioner,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Practitioner?name=Super,Working,Filter working
+32,Practitioner,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Practitioner?identifier={id},Working,Filter working
+
+33,Patient,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Patient/ec205633-4334-4c8f-a7e7-47d8b62299c4,Working,Fetch record
+34,Patient,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Patient?identifier=TEST999,Working,Filter working
+35,Patient,POST,https://34.93.1.225/openmrs/ws/fhir2/R4/Patient,Working,Created
+36,Patient,PUT,https://34.93.1.225/openmrs/ws/fhir2/R4/Patient/cfefb1e9-101a-4ec4-82c1-437bed9de913,Working,Updated
+37,Patient,DELETE,https://34.93.1.225/openmrs/ws/fhir2/R4/Patient/91eda8d6-ea15-43a9-9e26-809e744a38c0,Working,Deleted
+
+38,Person,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Person/ec205633-4334-4c8f-a7e7-47d8b62299c4,Working,Fetch record
+39,Person,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Person?name=Test,Working,Filter working
+40,Person,POST,https://34.93.1.225/openmrs/ws/fhir2/R4/Person,Working,Created
+41,Person,PUT,https://34.93.1.225/openmrs/ws/fhir2/R4/Person/e638f3e3-435b-448a-98f5-e69d7cc4629b,Working,Updated
+42,Person,DELETE,https://34.93.1.225/openmrs/ws/fhir2/R4/Person/e638f3e3-435b-448a-98f5-e69d7cc4629b,Working,Deleted
+
+43,ServiceRequest,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/ServiceRequest,Partial,No data
+44,Task,GET,https://34.93.1.225/openmrs/ws/fhir2/R4/Task,Partial,Empty response
+45,Task,POST,https://34.93.1.225/openmrs/ws/fhir2/R4/Task,Failed,500 Internal error
+46,Task,PUT,https://34.93.1.225/openmrs/ws/fhir2/R4/Task/{uuid},Failed,Not supported
